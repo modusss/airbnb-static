@@ -1,0 +1,23 @@
+
+<div class="container text-center padded">
+
+  <ul class="list-inline text-center">
+  <h1>Our team</h1><br><br>
+    <% ["anne", "seb","tom","greg","jo"].each do |member| %>
+      <li>
+        <%random = rand(0..50) %>
+        <%= image_tag "http://i.pravatar.cc/100?img=#{random}.jpg", class: "img-circle" %>
+        <h3><%= member.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+
+
+  <h3 class="padded"></h3>
+
+  <a href="mailto:contact@airbnb.com" class="mail">
+    <i class="fa fa-envelope"></i>
+    contact@airbnb.com
+  </a>
+
+</div>
